@@ -1,5 +1,7 @@
 # syntax=docker/dockerfile:1
-FROM ubuntu:jammy
+# FROM ubuntu:jammy
+FROM --platform=linux/arm64 ubuntu:jammy
+
 LABEL org.opencontainers.image.source https://github.com/khoj-ai/khoj
 
 # Install System Dependencies
